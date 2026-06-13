@@ -1,0 +1,671 @@
+.container{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    padding: 10px;
+    row-gap: 50px;
+    column-gap: 10px;
+    
+    
+}
+ .it2, .it3, .it4, .it5, .it6, .it7, .it8,.it9{
+
+    background-color: rgb(212, 38, 75);
+    padding: 20px;
+    color: white;
+    height: 100px;
+    border: 2px solid rgb(240, 240, 240);
+    
+
+    box-shadow: 5px 5px 5px black;
+
+    object-fit: cover;
+    
+
+}
+.it10, .it11, .it12, .it13, .it14, .it15, .it16,.it17{
+
+    background-color: rgb(212, 38, 75);
+    padding: 20px;
+    color: white;
+    height: 100px;
+    box-shadow: 8px 8px 8px black;
+    border: 2px solid rgb(254, 252, 252);
+    margin-top: 100px;
+
+    object-fit: cover;
+    
+    
+
+}
+.it1{
+    background-color: rgba(255, 105, 180, 0.5);
+    padding: 20px;
+    color: white;
+    grid-column: span 8;
+    height: 300px;
+    box-shadow: 6px 6px 6px black;
+    position: relative;
+    bottom: 40px;
+    background-image: url(Images/gta63.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 45rem;
+    background-position: center;
+    overflow: hidden;
+
+    
+    
+
+
+}
+.it2{
+    background-image: url(Images/cod.webp);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it3{
+
+    background-image: url(Images/blackout.webp);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+
+}
+.it4{
+    background-image: url(Images/alienshoot.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it5{
+    background-image: url(Images/cricket7.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it6{
+    background-image: url(Images/dage.webp);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it7{
+    background-image: url(Images/fc25.webp);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it8{
+    background-image: url(Images/gta.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it9{
+    background-image: url(Images/gta5.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it10{
+    background-image: url(Images/nfs.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it11{
+    background-image: url(Images/rdr.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it12{
+    background-image: url(Images/rugby.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it13{
+    background-image: url(Images/spd.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it14{
+    background-image: url(Images/tomb.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it15{
+    background-image: url(Images/wwe.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it16{
+    background-image: url(Images/co5o6h.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+.it17{
+    background-image: url(Images/grn.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: center;
+
+    background-image: url(Images/logoo.jpg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+
+
+    grid-column: span 8;
+    background-color:rgb(32, 25, 25);
+    height:70px;
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+
+.navbar select{
+    background-color:  rgb(65, 70, 73);
+    color: rgb(11, 12, 12);
+}
+
+
+.navbar a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(151, 156, 161);
+    
+
+    
+    
+}
+
+.b1{
+    position: relative;
+    left: 380px;
+    top: 12px;
+}
+
+
+.item{
+    font-family:sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 105, 180, 0.5);
+    width: 380px;
+    height: 350px;
+}
+.item2{
+    margin-left: 1105px;
+    font-family:sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 105, 180, 0.5);
+    width: 380px;
+    height: 360px;
+}
+
+
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 1.1s ease; 
+}
+.item2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 1.1s ease; 
+}
+
+
+.it1:hover .item {
+    opacity: 1;
+}
+.it1:hover .item2 {
+    opacity: 1;
+}
+.order{
+    position: absolute;
+    text-align: center;
+    
+    transition: opacity 1.1s ease; 
+    margin-top: 280px;
+    margin-left: 700px;
+    border:2px solid black;
+    opacity: 0;
+    height: 45px;
+    width: 90px;
+    box-shadow: 3px 3px 3px;
+    font-family:monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: rgba(230, 227, 227, 0.7); 
+    color: rgb(4, 14, 22);
+    font-weight: bold;
+
+}
+.it1:hover .order{
+    opacity: 1;
+    cursor: pointer;
+}
+.it2, .it3, .it4, .it5, .it6, .it7, .it8,.it9,.it10, .it11, .it12, .it13, .it14, .it15, .it16,.it17{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    transform: 0.3s ease;
+    
+}
+.cardconten2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transform: max-height 0.3s ease;
+    max-height: 50px;
+    overflow: hidden;
+    opacity: 0;
+    opacity: 0.3 ease;
+}
+.it2:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it2:hover .cardconten2{
+    max-height: 120px;
+    opacity: 1;
+}
+.it2:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.cardconten3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transform: max-height 0.3s ease;
+    max-height: 50px;
+    overflow: hidden;
+    opacity: 0;
+    opacity: 0.3 ease;
+}
+.it3:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it3:hover .cardconten3{
+    max-height: 120px;
+    opacity: 1;
+}
+.it3:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.cardconten4,.cardconten5,.cardconten6,.cardconten7,.cardconten8,.cardconten9,.cardconten10,.cardconten11,.cardconten12,.cardconten13,.cardconten14,.cardconten15,.cardconten16,.cardconten17{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transform: max-height 0.3s ease;
+    max-height: 50px;
+    overflow: hidden;
+    opacity: 0;
+    opacity: 0.3 ease;
+}
+.it4:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it4:hover .cardconten4{
+    max-height: 120px;
+    opacity: 1;
+}
+.it4:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it5:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it5:hover .cardconten5{
+    max-height: 120px;
+    opacity: 1;
+}
+.it5:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it6:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it6:hover .cardconten6{
+    max-height: 120px;
+    opacity: 1;
+}
+.it6:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it7:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it7:hover .cardconten7{
+    max-height: 120px;
+    opacity: 1;
+}
+.it7:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it8:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it8:hover .cardconten8{
+    max-height: 120px;
+    opacity: 1;
+}
+.it8:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it9:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it9:hover .cardconten9{
+    max-height: 120px;
+    opacity: 1;
+}
+.it9:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it10:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it10:hover .cardconten10{
+    max-height: 120px;
+    opacity: 1;
+}
+.it10:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it11:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it11:hover .cardconten11{
+    max-height: 120px;
+    opacity: 1;
+}
+.it11:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it12:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it12:hover .cardconten12{
+    max-height: 120px;
+    opacity: 1;
+}
+.it12:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it13:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it13:hover .cardconten13{
+    max-height: 120px;
+    opacity: 1;
+}
+.it13:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it14:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it14:hover .cardconten14{
+    max-height: 120px;
+    opacity: 1;
+}
+.it14:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it15:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it15:hover .cardconten15{
+    max-height: 120px;
+    opacity: 1;
+}
+.it15:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it16:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it16:hover .cardconten16{
+    max-height: 120px;
+    opacity: 1;
+}
+.it16:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.it17:hover{
+    transform: scale(1.05);
+    background-size: 248px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+}
+.it17:hover .cardconten17{
+    max-height: 120px;
+    opacity: 1;
+}
+.it17:hover {
+    background-size: 110%; 
+    transform: scale(1.05); 
+}
+.img2{
+
+    padding: 20px;
+    color: white;
+    height: 300px;
+    width: 350px;
+
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    background-image: url(Images/gta62.avif);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 45rem;
+    background-position: center;
+    overflow: hidden;
+    transition: opacity 0.8s ease; 
+}
+.img3{
+
+    padding: 20px;
+    color: white;
+    height: 300px;
+    width: 450px;
+
+
+
+    position: relative;
+    bottom: 360px;
+    left: 67rem;
+    background-image: url(Images/gta6.webp);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 45rem;
+    background-position: center;
+    overflow: hidden;
+    transition: opacity 0.8s ease; 
+
+}
+.it1:hover .img2{
+    opacity: 0;
+    transition: opacity 1.1 ease;
+}
+.it1:hover .img3{
+    opacity: 0;
+}
+
+
+body{
+    background-color: rgb(61, 59, 59);
+}

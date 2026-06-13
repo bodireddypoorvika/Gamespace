@@ -1,0 +1,344 @@
+/* ── Reset ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(61, 59, 59);
+  font-family: sans-serif;
+}
+
+/* ── Main grid container ─────────────────────────────── */
+.container {
+  background-image: url('/Images/bg.jpg');
+  background-color: #1a1a1a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  /* 9 columns — enough for 9 cards per row */
+  grid-template-columns: repeat(9, 1fr);
+  padding: 10px;
+  row-gap: 20px;
+  column-gap: 10px;
+  align-items: start;
+}
+
+/* ── Navbar ──────────────────────────────────────────── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  /* logo on left */
+  background-image: url('/Images/logoo.jpg');
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: 8px center;
+  /* span full width */
+  grid-column: 1 / -1;
+  background-color: rgb(32, 25, 25);
+  min-height: 60px;
+  padding: 8px 12px 8px 140px;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 6px 8px;
+  color: rgb(151, 156, 161);
+  font-size: 0.9rem;
+}
+
+.navbar a:hover {
+  color: aliceblue;
+}
+
+.navbar select {
+  background-color: rgb(65, 70, 73);
+  color: rgb(220, 220, 220);
+  border: none;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.navbar label {
+  color: rgb(151, 156, 161);
+  font-size: 0.9rem;
+  margin-right: 4px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.nav-buttons button {
+  background-color: rgb(80, 80, 80);
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.78rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: rgb(110, 110, 110);
+}
+
+/* ── Hero banner ─────────────────────────────────────── */
+.hero {
+  grid-column: 1 / -1;
+  position: relative;
+  height: 300px;
+  background-image: url('/Images/gta63.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/* left overlay */
+.hero-left {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.72);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  line-height: 1.6;
+}
+
+/* right overlay */
+.hero-right {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.72);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  line-height: 1.5;
+}
+
+/* decorative side images */
+.hero-img-left {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 300px;
+  background-image: url('/Images/gta62.avif');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease;
+}
+
+.hero-img-right {
+  position: absolute;
+  top: 0; right: 0;
+  height: 100%;
+  width: 380px;
+  background-image: url('/Images/gta6.webp');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease;
+}
+
+/* on hover — show text overlays, hide decorative images */
+.hero:hover .hero-left,
+.hero:hover .hero-right {
+  opacity: 1;
+}
+
+.hero:hover .hero-img-left,
+.hero:hover .hero-img-right {
+  opacity: 0;
+}
+
+/* order button */
+.order-btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  background: rgba(230, 227, 227, 0.85);
+  color: rgb(4, 14, 22);
+  border: 2px solid #333;
+  padding: 8px 20px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero:hover .order-btn {
+  opacity: 1;
+}
+
+/* ── Tagline bar ─────────────────────────────────────── */
+.tagline {
+  grid-column: 1 / -1;
+  background-color: rgb(24, 23, 23);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.letter-by-letter {
+  font-family: monospace;
+  color: aliceblue;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.letter-by-letter span {
+  display: inline-block;
+  opacity: 0;
+  animation: appear 2s forwards infinite;
+}
+
+.letter-by-letter span:nth-child(1) { animation-delay: 0s; }
+.letter-by-letter span:nth-child(2) { animation-delay: 0.2s; }
+.letter-by-letter span:nth-child(3) { animation-delay: 0.4s; }
+.letter-by-letter span:nth-child(4) { animation-delay: 0.6s; }
+.letter-by-letter span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes appear {
+  0%, 100% { opacity: 0; }
+  50%       { opacity: 1; }
+}
+
+/* ── Section label ───────────────────────────────────── */
+.section-label {
+  grid-column: 1 / -1;
+  color: rgb(180, 180, 180);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 4px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ── Game card ───────────────────────────────────────── */
+.game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2a2a2a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, height 0.25s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.06);
+  height: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+/* overlay that slides up on hover */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.88));
+  color: white;
+  padding: 8px 6px 6px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.game-card:hover .card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 0.76rem;
+  margin-bottom: 4px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-desc {
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.85);
+  /* clamp to 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(244, 239, 239);
+  background-color: rgb(60, 65, 65);
+  border: 1px solid rgb(93, 91, 91);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6rem;
+  letter-spacing: 0.5px;
+  padding: 3px 7px;
+  border-radius: 3px;
+}
+
+.card-buttons a:hover {
+  background-color: rgb(90, 95, 95);
+}
